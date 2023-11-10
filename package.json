@@ -11,6 +11,8 @@
   "private": true,
   "license": "UNLICENSED",
   "scripts": {
+    "makeExecutable": "chmod +x ./scripts/*.sh || true",
+    "postinstall": "pnpm run makeExecutable",
     "build": "nest build",
     "format": "pnpm run prettier:fix",
     "start": "nest start",
